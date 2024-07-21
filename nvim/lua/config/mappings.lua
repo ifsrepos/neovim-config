@@ -38,3 +38,6 @@ map('n', '<up>', '<c-w>k', opts)      -- Move to upper window
 map('n', '<right>', '<c-w>l', opts)   -- Move to right window
 map('n', '<down>', '<c-w>j', opts)    -- Move to down window
 
+-- Comment
+local command = ':lua require("commands.comment").comment_lines()<CR>'
+map('v', '<M-c>', command, opts)   -- Comment selected text

@@ -1,4 +1,4 @@
 local cmd = vim.cmd
 
-cmd('coorscheme one')
-cmd('hightlight Comment cterm=italic gui=italic')
+cmd('colorscheme one')
+cmd('highlight Comment cterm=italic gui=italic')

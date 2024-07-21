@@ -1,5 +1,6 @@
--- require('plugins.packer')
+require('plugins.packer')
 require('config.mappings')
 require('config.settings')
--- require('plugins.vim-one')
+require('commands.comment')
+require('plugins.vim-one')
 
