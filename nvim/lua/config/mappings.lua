@@ -43,3 +43,10 @@ local command = ':lua require("commands.comment").comment_lines()<CR>'
 map('v', '<M-c>', command, opts)      -- Comment selected text
 command = ':lua require("commands.comment").comment_line()<CR>'
 map('n', '<M-c>', command, opts)      -- Comment current line
+
+-- Copy and paste
+map('n', '<c-c>', '"+y', opts)        -- Copy in normal mode
+map('v', '<c-c>', '"+y', opts)        -- Copy in visual mode
+map('n', '<c-v>', '"+p', opts)        -- Paste in normal mode
+map('v', '<c-v>', '"+p', opts)        -- Paste in visual mode
+
