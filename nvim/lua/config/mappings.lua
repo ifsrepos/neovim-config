@@ -40,4 +40,6 @@ map('n', '<down>', '<c-w>j', opts)    -- Move to down window
 
 -- Comment
 local command = ':lua require("commands.comment").comment_lines()<CR>'
-map('v', '<M-c>', command, opts)   -- Comment selected text
+map('v', '<M-c>', command, opts)      -- Comment selected text
+command = ':lua require("commands.comment").comment_line()<CR>'
+map('n', '<M-c>', command, opts)      -- Comment current line
