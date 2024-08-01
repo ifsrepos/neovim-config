@@ -6,4 +6,5 @@ vim.cmd([[autocmd BufWritePost packer.lua source <afile> | PackerCompile]])
 return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
     use 'shaunsingh/nord.nvim'
+    use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 end)
