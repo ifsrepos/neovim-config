@@ -39,8 +39,8 @@
 
 ## Commenting
 
-- **Comment Selected Text (Visual Mode):** `Alt + c`
-- **Comment Current Line (Normal Mode):** `Alt + c`
+- **Switch Comment Selected Text (Visual Mode):** `Alt + c`
+- **Switch Comment Current Line (Normal Mode):** `Alt + c`
 
 ## Folding
 
@@ -49,3 +49,9 @@
 - **Fold All Blocks:** `Leader + F`
 - **Unfold All Blocks:** `Leader + U`
 
+# Adding a new plugin
+To add a new plugin, modify lua/plugins/packer.lua file and run `:PackerSync`
+
+# Config for LSP
+- Install pyright:
+`npm install -g pyright`
